@@ -79,7 +79,7 @@ const Sidebar = ({
             "& .MuiDrawer-paper": {
               color: theme.palette.secondary[200],
               backgroundColor: theme.palette.background.alt,
-              boxSixing: "border-box",
+              boxSizing: "border-box",
               borderWidth: isNonMobile ? 0 : "2px",
               width: drawerWidth,
             },
@@ -151,10 +151,11 @@ const Sidebar = ({
             </List>
           </Box>
 
-          <Box position="" bottom="2rem">
+          <Box position="static" bottom="2rem">
             <Divider />
             <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 3rem">
               <Box
+                ml="3.5rem"
                 component="img"
                 alt="profile"
                 src={profileImg}
@@ -163,7 +164,7 @@ const Sidebar = ({
                 borderRadius="50%"
                 sx={{ objectFit: "cover" }}
               />
-              <Box textAlign="left">
+              <Box textAlign="center">
                 <Typography
                   fontWeight="bold"
                   fontSize="0.9rem"
@@ -172,6 +173,7 @@ const Sidebar = ({
                   {user.name}
                 </Typography>
                 <Typography
+                  mb="0.5rem"
                   fontSize="0.8rem"
                   sx={{ color: theme.palette.secondary[200] }}
                 >
