@@ -30,7 +30,7 @@ const Transactions = () => {
     },
     {
       field: "userId",
-      headerName: "User Id",
+      headerName: "User ID",
       flex: 1,
     },
     {
@@ -89,22 +89,18 @@ const Transactions = () => {
           rows={(data && data.transactions) || []}
           columns={columns}
           rowCount={(data && data.total) || 0}
-          rowsPerPageOptions={[20, 50, 100]}
+          pageSizeOptions={[20, 50, 100]}
           pagination
-          page={page}
-          pageSize={pageSize}
           paginationMode="server"
           sortingMode="server"
+          page={page}
+          pageSize={pageSize}
           onPageChange={(newPage) => setPage(newPage)}
           onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
           onSortModelChange={(newSortModel) => setSort(...newSortModel)}
           components={{ Toolbar: DataGridCustomToolbar }}
           componentsProps={{
-            toolbar: {
-              searchInput,
-              setSearchInput,
-              setSearch,
-            },
+            toolbar: { searchInput, setSearchInput, setSearch },
           }}
         />
       </Box>
