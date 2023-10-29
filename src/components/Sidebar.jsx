@@ -26,7 +26,6 @@ import {
   PointOfSaleOutlined,
   CalendarMonthOutlined,
   AdminPanelSettingsOutlined,
-  TrendingUpOutlined,
   PieChartOutlined,
 } from "@mui/icons-material";
 import FlexBetween from "./FlexBetween";
@@ -45,7 +44,6 @@ const navItems = [
   { text: "Breakdown", icon: <PieChartOutlined /> },
   { text: "Management", icon: null },
   { text: "Admin", icon: <AdminPanelSettingsOutlined /> },
-  { text: "Performance", icon: <TrendingUpOutlined /> },
 ];
 
 const Sidebar = ({
