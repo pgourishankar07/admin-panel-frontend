@@ -14,6 +14,7 @@ import Overview from "scenes/overview";
 import Monthly from "scenes/monthly";
 import Breakdown from "scenes/breakdown";
 import Admin from "scenes/admin";
+import ErrorPage from "components/ErrorPage";
 
 function App() {
   const mode = useSelector((state) => state.global.mode);
@@ -35,6 +36,7 @@ function App() {
               <Route path="/monthly" element={<Monthly />} />
               <Route path="/breakdown" element={<Breakdown />} />
               <Route path="/admin" element={<Admin />} />
+              <Route path="*" element={<ErrorPage />} />
             </Route>
           </Routes>
         </ThemeProvider>
