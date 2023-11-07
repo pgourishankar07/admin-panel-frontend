@@ -31,7 +31,7 @@ const User1 = () => {
   const theme = useTheme();
 
   const handleFontSizeChange = (val) => {
-    setCustomizations({ ...customizations, fontSize: val });
+    setCustomizations({ ...customizations, fontSize: val, name: editableStr });
   };
 
   const handleColorChange = (color) => {
@@ -39,6 +39,7 @@ const User1 = () => {
     setCustomizations({
       ...customizations,
       backgroundColor: `rgba(${r}, ${g}, ${b}, ${a})`,
+      name: editableStr,
     });
   };
 
