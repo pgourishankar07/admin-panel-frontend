@@ -15,6 +15,8 @@ import Monthly from "scenes/monthly";
 import Breakdown from "scenes/breakdown";
 import Admin from "scenes/admin";
 import User1 from "scenes/user1";
+import User2 from "scenes/user2";
+import User3 from "scenes/user3";
 import ErrorPage from "components/ErrorPage";
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
               <Route path="/breakdown" element={<Breakdown />} />
               <Route path="/admin" element={<Admin />} />
               <Route path="/user1" element={<User1 />} />
+              <Route path="/user2" element={<User2 />} />
+              <Route path="/user3" element={<User3 />} />
               <Route path="*" element={<ErrorPage />} />
             </Route>
           </Routes>
