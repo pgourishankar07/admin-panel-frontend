@@ -27,6 +27,9 @@ import {
   CalendarMonthOutlined,
   AdminPanelSettingsOutlined,
   PieChartOutlined,
+  Person,
+  Person2,
+  Person3,
 } from "@mui/icons-material";
 import FlexBetween from "./FlexBetween";
 import profileImg from "assets/profile.jpeg";
@@ -44,6 +47,9 @@ const navItems = [
   { text: "Breakdown", icon: <PieChartOutlined /> },
   { text: "Management", icon: null },
   { text: "Admin", icon: <AdminPanelSettingsOutlined /> },
+  { text: "User1", icon: <Person /> },
+  { text: "User2", icon: <Person2 /> },
+  { text: "User3", icon: <Person3 /> },
 ];
 
 const Sidebar = ({
