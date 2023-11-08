@@ -15,24 +15,13 @@ import {
   useTheme,
 } from "@mui/material";
 import {
-  SettingsOutlined,
   ChevronLeft,
   ChevronRightOutlined,
-  HomeOutlined,
-  ShoppingCartOutlined,
-  Groups2Outlined,
-  ReceiptLongOutlined,
-  PublicOutlined,
-  PointOfSaleOutlined,
-  CalendarMonthOutlined,
-  AdminPanelSettingsOutlined,
-  PieChartOutlined,
   Person,
   Person2,
   Person3,
 } from "@mui/icons-material";
 import FlexBetween from "./FlexBetween";
-import profileImg from "assets/profile.jpeg";
 
 const navItems = [
   { text: "User1", icon: <Person /> },

@@ -3,24 +3,17 @@ import {
   LightModeOutlined,
   DarkModeOutlined,
   Menu as MenuIcon,
-  Search,
-  SettingsOutlined,
-  ArrowDropDownOutlined,
 } from "@mui/icons-material";
 import FlexBetween from "./FlexBetween";
 import { useDispatch } from "react-redux";
 import { setMode } from "state";
-import profileImg from "assets/profile.jpeg";
 import {
   AppBar,
-  Box,
   Button,
   IconButton,
-  InputBase,
   Menu,
   MenuItem,
   Toolbar,
-  Typography,
   useTheme,
 } from "@mui/material";
 

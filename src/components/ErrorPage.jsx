@@ -20,7 +20,7 @@ const ErrorPage = () => {
               margin: "5px",
               padding: "5px",
             }}
-            to="/dashboard"
+            to="/"
           >
             Go to Dashboard
           </Link>
