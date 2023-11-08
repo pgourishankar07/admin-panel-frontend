@@ -35,18 +35,6 @@ import FlexBetween from "./FlexBetween";
 import profileImg from "assets/profile.jpeg";
 
 const navItems = [
-  { text: "Dashboard", icon: <HomeOutlined /> },
-  { text: "Client Facing", icon: null },
-  { text: "Products", icon: <ShoppingCartOutlined /> },
-  { text: "Customers", icon: <Groups2Outlined /> },
-  { text: "Transactions", icon: <ReceiptLongOutlined /> },
-  { text: "Geography", icon: <PublicOutlined /> },
-  { text: "Sales", icon: null },
-  { text: "Overview", icon: <PointOfSaleOutlined /> },
-  { text: "Monthly", icon: <CalendarMonthOutlined /> },
-  { text: "Breakdown", icon: <PieChartOutlined /> },
-  { text: "Management", icon: null },
-  { text: "Admin", icon: <AdminPanelSettingsOutlined /> },
   { text: "User1", icon: <Person /> },
   { text: "User2", icon: <Person2 /> },
   { text: "User3", icon: <Person3 /> },
@@ -155,37 +143,6 @@ const Sidebar = ({
 
           <Box position="static" bottom="2rem">
             <Divider />
-            <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 3rem">
-              <Box
-                ml="3.5rem"
-                component="img"
-                alt="profile"
-                src={profileImg}
-                height="40px"
-                width="40px"
-                borderRadius="50%"
-                sx={{ objectFit: "cover" }}
-              />
-              <Box textAlign="center">
-                <Typography
-                  fontWeight="bold"
-                  fontSize="0.9rem"
-                  sx={{ color: theme.palette.secondary[100] }}
-                >
-                  {user.name}
-                </Typography>
-                <Typography
-                  mb="0.5rem"
-                  fontSize="0.8rem"
-                  sx={{ color: theme.palette.secondary[200] }}
-                >
-                  {user.occupation}
-                </Typography>
-                <SettingsOutlined
-                  sx={{ color: theme.palette.secondary[300], fontSize: "25px" }}
-                />
-              </Box>
-            </FlexBetween>
           </Box>
         </Drawer>
       )}

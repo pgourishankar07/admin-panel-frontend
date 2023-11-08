@@ -48,27 +48,19 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
           borderRadius="9px"
           gap="3rem"
           p="0.1rem 1.5rem"
-        >
-          <InputBase placeholder="Search..." />
-          <IconButton>
-            <Search />
-          </IconButton>
-        </FlexBetween>
+        ></FlexBetween>
         {/* RIGHT_SIDE */}
-        <FlexBetween gap="1.5rem">
-          <IconButton onClick={() => dispatch(setMode())}>
-            {theme.palette.mode === "dark" ? (
-              <DarkModeOutlined sx={{ fontSize: "25px" }} />
-            ) : (
-              <LightModeOutlined sx={{ fontSize: "25px" }} />
-            )}
-          </IconButton>
-          <IconButton>
-            <SettingsOutlined sx={{ fontSize: "25px" }} />
-          </IconButton>
-        </FlexBetween>
 
         <FlexBetween>
+          <FlexBetween gap="1.5rem">
+            <IconButton onClick={() => dispatch(setMode())}>
+              {theme.palette.mode === "dark" ? (
+                <DarkModeOutlined sx={{ fontSize: "25px" }} />
+              ) : (
+                <LightModeOutlined sx={{ fontSize: "25px" }} />
+              )}
+            </IconButton>
+          </FlexBetween>
           <Button
             onClick={handleClick}
             sx={{
@@ -78,40 +70,7 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
               textTransform: "none",
               gap: "1rem",
             }}
-          >
-            <Box
-              component="img"
-              alt="profile"
-              src={profileImg}
-              height="32px"
-              width="32px"
-              borderRadius="50%"
-              sx={{ objectFit: "cover" }}
-            />
-            <Box textAlign="center">
-              <Typography
-                fontWeight="bold"
-                fontSize="0.85rem"
-                sx={{ color: theme.palette.secondary[100] }}
-              >
-                {user.name}
-              </Typography>
-              <Typography
-                mb="0.5rem"
-                fontSize="0.75rem"
-                sx={{ color: theme.palette.secondary[200] }}
-              >
-                {user.occupation}
-              </Typography>
-            </Box>
-
-            <ArrowDropDownOutlined
-              sx={{
-                color: theme.palette.secondary[300],
-                fontSize: "25px",
-              }}
-            />
-          </Button>
+          ></Button>
           <Menu
             anchorEl={anchorEl}
             open={isOpen}
