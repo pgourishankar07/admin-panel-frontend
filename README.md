@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# A Full Stack Admin Dashboard built using MERN stack
+Visualization of Sales and customer segments, etc
+![View](https://github.com/pgourishankar07/admin-panel-frontend/raw/master/Test.png)
+
+To view Demo : https://drive.google.com/drive/folders/18hIgViifIULt242WlBO7WbgxgIla1H6y
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
