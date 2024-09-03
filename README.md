@@ -4,6 +4,8 @@ Visualization of Sales and customer segments, etc
 
 To view Demo : https://drive.google.com/drive/folders/18hIgViifIULt242WlBO7WbgxgIla1H6y
 
+Visit: https://master--adminpanel-gouri-shankar.netlify.app/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
